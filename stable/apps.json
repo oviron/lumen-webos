@@ -11,25 +11,25 @@
     {
       "id": "com.ammar027.lumen",
       "title": "Lumen",
-      "iconUri": "https://raw.githubusercontent.com/ammar027/lumen-webos/hbc-repo/stable/icon.png",
-      "manifestUrl": "https://raw.githubusercontent.com/ammar027/lumen-webos/hbc-repo/stable/com.ammar027.lumen.manifest.json",
+      "iconUri": "https://raw.githubusercontent.com/oviron/lumen-webos/hbc-repo/stable/icon.png",
+      "manifestUrl": "https://raw.githubusercontent.com/oviron/lumen-webos/hbc-repo/stable/com.ammar027.lumen.manifest.json",
       "manifest": {
         "id": "com.ammar027.lumen",
-        "version": "1.1.4",
+        "version": "1.1.5",
         "type": "web",
         "title": "Lumen",
-        "appDescription": "Minimalist home screen: apps, inputs and a way back to LG's home.",
-        "iconUri": "https://raw.githubusercontent.com/ammar027/lumen-webos/hbc-repo/stable/icon.png",
-        "sourceUrl": "https://github.com/ammar027/lumen-webos",
+        "appDescription": "\u0413\u043b\u0430\u0432\u043d\u044b\u0439 \u044d\u043a\u0440\u0430\u043d \u0434\u043b\u044f LG webOS \u0441 \u043f\u043e\u043b\u043d\u044b\u043c \u0440\u0443\u0441\u0441\u043a\u0438\u043c \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u043e\u043c.",
+        "iconUri": "https://raw.githubusercontent.com/oviron/lumen-webos/hbc-repo/stable/icon.png",
+        "sourceUrl": "https://github.com/oviron/lumen-webos",
         "rootRequired": true,
-        "ipkUrl": "https://github.com/ammar027/lumen-webos/releases/download/v1.1.4/com.ammar027.lumen_1.1.4_all.ipk",
+        "ipkUrl": "https://github.com/oviron/lumen-webos/releases/download/v1.1.5-ru.1/com.ammar027.lumen_1.1.5_all.ipk",
         "ipkHash": {
-          "sha256": "ba56dd6499eab4cea1582db904b9de1cdd89c01ec12338a9a14f139783516605"
+          "sha256": "691bfea805eaab782966af398d944a1829a0a7b78bd46b7464175f23af643922"
         },
-        "ipkSize": 3230546
+        "ipkSize": 3274780
       },
       "pool": "main",
-      "shortDescription": "Minimalist home screen: apps, inputs and a way back to LG's home."
+      "shortDescription": "\u0413\u043b\u0430\u0432\u043d\u044b\u0439 \u044d\u043a\u0440\u0430\u043d \u0434\u043b\u044f LG webOS \u0441 \u043f\u043e\u043b\u043d\u044b\u043c \u0440\u0443\u0441\u0441\u043a\u0438\u043c \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u043e\u043c."
     }
   ]
 }
