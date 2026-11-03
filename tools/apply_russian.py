@@ -113,6 +113,6 @@ sub('index.html', [('<html lang="en">', '<html lang="ru">'), ('<title>Launcher</
 
 manifest_path = APP / 'public/appinfo.json'
 manifest = json.loads(manifest_path.read_text())
-manifest.update(version='1.1.5', vendor='oviron', appDescription='Главный экран для LG webOS с полным русским переводом.')
+manifest.update(version='1.1.6', vendor='oviron', appDescription='Главный экран для LG webOS с полным русским переводом.')
 manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
 print(f'Russian applied: {len(translations)} entries')
