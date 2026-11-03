@@ -18,7 +18,7 @@ with tarfile.open(f'{tmp}/data.tar.gz') as tar:
 manifest = {
     'id': info['id'], 'version': info['version'], 'type': 'web', 'title': info['title'],
     'appDescription': info.get('appDescription', ''), 'iconUri': f'{base}/icon.png',
-    'sourceUrl': 'https://github.com/ammar027/lumen-webos', 'rootRequired': True,
+    'sourceUrl': 'https://github.com/oviron/lumen-webos', 'rootRequired': True,
     'ipkUrl': ipk_url, 'ipkHash': {'sha256': hashlib.sha256(open(ipk, 'rb').read()).hexdigest()}, 'ipkSize': os.path.getsize(ipk),
 }
 name = f"{info['id']}.manifest.json"

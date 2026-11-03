@@ -4,7 +4,7 @@
 #  - a tag v* (git tag v1.1.4 && git push origin v1.1.4): the same build, published as the GitHub release of that tag (created if it is not there yet),
 #    and added to the Homebrew Channel repository on the hbc-repo branch.
 #  - "Run workflow" with a tag in "publish_tag": adds that release's existing .ipk to the Homebrew Channel repository (no rebuild).
-# Homebrew Channel: add https://raw.githubusercontent.com/ammar027/lumen-webos/hbc-repo/stable/apps.json in the Channel's settings.
+# Homebrew Channel: add https://raw.githubusercontent.com/oviron/lumen-webos/hbc-repo/stable/apps.json in the Channel's settings.
 name: release
 on:
   push:
@@ -61,7 +61,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ github.ref_name }}
         run: |
-          gh release view "$TAG" >/dev/null 2>&1 || gh release create "$TAG" --title "Lumen ${TAG#v}" --notes "Built from $GITHUB_SHA. Install: drop the .ipk onto Dev Manager, or ares-install --device lgtv." --target "$GITHUB_SHA"
+          gh release view "$TAG" >/dev/null 2>&1 || gh release create "$TAG" --title "Lumen RU ${TAG#v}" --notes "Полный русский интерфейс Lumen. Исходники: $GITHUB_SHA. Установите пакет через Dev Manager или webOS CLI. При обновлении выберите русский в настройках языка." --target "$GITHUB_SHA"
           gh release upload "$TAG" release/*.ipk release/SHA256SUMS.txt --clobber
       - name: Homebrew Channel repository
         if: github.ref_type == 'tag'
